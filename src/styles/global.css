@@ -1,0 +1,21 @@
+:root
+{
+    --dark-text: #14151f;
+    --dark-text-hover: #3c3e5d;
+    --light-text: #f4f4f4;
+    --light-text-hover: #ffffff;
+    --dark-background: #373B58;
+    --dark-accent: #CDC7E5;
+    --light-background: #f4f4f4;
+    --light-accent: #437C90;
+    --light-accent-alt: #FFCF00;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif, Helvetica;
+}

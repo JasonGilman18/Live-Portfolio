@@ -1,0 +1,34 @@
+.linkTable
+{
+    width: 80%;
+    height: 80%;
+}
+
+.linkTable td
+{
+    text-align: center;
+}
+
+.linkTable td h5
+{
+    font-size: 1.5vw;
+    color: var(--light-text);
+}
+
+.linkTable td h5:hover
+{
+    cursor: pointer;
+    color: var(--light-text-hover);
+}
+
+.linkTableTopLeft
+{
+    border-right: 2px solid var(--light-text);
+    border-bottom: 2px solid var(--light-text);
+}
+
+.linkTableBottomRight
+{
+    border-left: 2px solid var(--light-text);
+    border-top: 2px solid var(--light-text);
+}

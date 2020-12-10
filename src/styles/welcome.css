@@ -1,0 +1,124 @@
+.welcomeContainer
+{
+    position: relative;
+    top: 0;
+
+    background-color: var(--dark-background);
+}
+
+.welcomeRow
+{
+    padding: 5vw;
+}
+
+.welcomeHeading
+{
+    margin-left: 2vw;
+
+    font-size: 6vw;   
+
+    color: var(--dark-text);
+}
+
+.welcomeSubHeading
+{
+    margin-left: 3vw;
+
+    font-size: 2vw;
+
+    color: var(--dark-text);
+}
+
+.linkBox
+{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introRow
+{
+    padding: 1vw 5vw 5vw 5vw; 
+
+    color: var(--light-text);
+}
+
+.skills
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.skillLabel
+{
+    font-size: 1.8vw;
+}
+
+.skillDivider
+{
+    width: 2px;
+    height: 2vw;
+
+    background-color: var(--light-background);
+}
+
+.skillUnderline
+{
+    width: 100%;
+    height: 2px;
+
+    margin-top: 1.8vw;
+}
+
+.skillUnderline.one{background-color: var(--dark-accent);}
+.skillUnderline.two{background-color: var(--light-accent-alt);}
+.skillUnderline.three{background-color: var(--light-accent);}
+
+.icon
+{
+    width: 6vw;
+    height: 6vw;
+
+    margin-bottom: 1vw;
+
+    color: var(--dark-text);
+}
+
+.icon:hover
+{
+    cursor: pointer;
+    color: var(--dark-text-hover);
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px)
+{
+
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 767.98px)
+{
+
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (max-width: 991.98px)
+{
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (max-width: 1199.98px)
+{
+    .linkTable td h5
+    {
+        font-size: 2vw;
+    }
+}
