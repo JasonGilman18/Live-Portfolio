@@ -1,6 +1,6 @@
 import * as React from "react";
-import "../styles/global.css";
-import "../styles/linkTable.css";
+import "../../styles/global.css";
+import "../../styles/desktop/linkTable_desktop.css";
 
 
 type LinkTableProps = {links: Array<string>};
