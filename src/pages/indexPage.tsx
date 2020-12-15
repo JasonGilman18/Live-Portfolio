@@ -4,27 +4,34 @@ import Mobile from "./mobile";
 
 
 type IndexPageProps = {};
-type IndexPageStates = {browserWidth: number};
+type IndexPageStates = {browserWidth: number, orientation: React.ReactText};
 class IndexPage extends React.Component<IndexPageProps, IndexPageStates>
 {
     constructor(props: any)
     {
       super(props);
       
-      this.state = {browserWidth: 0};
+      var temp_orientation = window.orientation;
+      if(temp_orientation == null || temp_orientation == undefined)
+        temp_orientation = "portrait";
+
+      this.state = {browserWidth: 0, orientation: temp_orientation};
 
       this.updateBrowserWidth = this.updateBrowserWidth.bind(this);
+      this.updateOrientation = this.updateOrientation.bind(this);
     }
 
     componentDidMount()
     {
       this.updateBrowserWidth();
       window.addEventListener('resize', this.updateBrowserWidth);
+      window.addEventListener('orientationchange', this.updateOrientation);
     }
 
     componentWillUnmount()
     {
       window.removeEventListener('resize', this.updateBrowserWidth);
+      window.addEventListener('orientationchange', this.updateOrientation);
     }
 
     updateBrowserWidth()
@@ -32,9 +39,18 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageStates>
       this.setState({browserWidth: window.innerWidth});
     }
 
+    updateOrientation()
+    {
+      var temp_orientation = window.orientation;
+      if(temp_orientation == null || temp_orientation == undefined)
+        temp_orientation = "portrait";
+
+      this.setState({orientation: temp_orientation});
+    }
+
     render()
     {
-      if(this.state.browserWidth > 767.98)
+      if(this.state.browserWidth > 767.98 || this.state.orientation == "landscape")
         return <Desktop/>;
       else
         return <Mobile/>;
