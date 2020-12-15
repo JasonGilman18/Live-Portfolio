@@ -7,9 +7,9 @@ import { Container } from "react-bootstrap";
 type StyledIconProps = {};
 export const StyledIconBoxMobile: React.FunctionComponent<StyledIconProps> = (props) => (
 
-    <Container className="styledIconBoxLgMobile">
-        <Container className="styledIconBoxMdMobile">
-            <Container className="styledIconBoxSmMobile">
+    <Container fluid className="styledIconBoxLgMobile">
+        <Container fluid className="styledIconBoxMdMobile">
+            <Container fluid className="styledIconBoxSmMobile">
                 {props.children}
             </Container>
         </Container>

@@ -1,6 +1,6 @@
 import React from "react";
 import {Desktop} from "./desktop";
-import {Mobile} from "./mobile";
+import Mobile from "./mobile";
 
 
 type IndexPageProps = {};

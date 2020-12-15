@@ -4,12 +4,12 @@ import "../../styles/mobile/styledButtonBox_mobile.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from "react-bootstrap";
 
-type StyledButtonProps = {};
+type StyledButtonProps = {menu: boolean};
 export const StyledButtonBoxMobile: React.FunctionComponent<StyledButtonProps> = (props) => (
 
-    <Container className="styledButtonBoxLgMobile">
-        <Container className="styledButtonBoxMdMobile">
-            <Container className="styledButtonBoxSmMobile">
+    <Container fluid className={"styledButtonBoxLgMobile " + (props.menu ? "styledMenuLg" : "")}>
+        <Container fluid className={"styledButtonBoxMdMobile " + (props.menu ? "styledMenuMd" : "")}>
+            <Container fluid className={"styledButtonBoxSmMobile " + (props.menu ? "styledMenuSm" : "")}>
                 {props.children}
             </Container>
         </Container>

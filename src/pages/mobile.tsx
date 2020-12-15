@@ -9,47 +9,87 @@ import { StyledIconBoxMobile } from '../components/mobile/styledIconBox_mobile';
 import {ReactComponent as Github} from '../icons/github.svg';
 import {ReactComponent as Linkedin} from '../icons/linkedin.svg';
 import {ReactComponent as Email} from '../icons/email.svg';
-import {ReactComponent as Caret} from '../icons/caret-down-solid.svg';
+import {ReactComponent as Menu} from '../icons/bars-solid.svg';
+import {ReactComponent as Close} from '../icons/times-solid.svg';
 
 
-export const Mobile: React.FunctionComponent = () => (
+type MobileProps = {};
+type MobileStates = {menu: boolean};
+class Mobile extends React.Component<MobileProps, MobileStates>
+{
+  constructor(props: any)
+  {
+    super(props);
 
-    <Container fluid className="welcomeContainerMobile">
-      <Container className="menuContainerMobile">
-        <StyledButtonBoxMobile>
-          <Caret className="menuButtonMobile"/>
-        </StyledButtonBoxMobile>
+    this.state = {menu: false};
+
+    this.openMenu = this.openMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
+  }
+
+  openMenu()
+  {
+    this.setState({menu: true});
+  }
+
+  closeMenu()
+  {
+    this.setState({menu: false});
+  }
+
+  render()
+  {
+    return (
+
+      <Container fluid className="welcomeContainerMobile">
+        <Container className="menuContainerMobile">
+          <StyledButtonBoxMobile menu={this.state.menu}>
+            <Menu className={this.state.menu ? "hidden" : "openMenuButtonMobile"} onClick={this.openMenu}/>
+            <Close className={this.state.menu ? "closeMenuButtonMobile" : "hidden"} onClick={this.closeMenu}/>
+            <Container fluid className={this.state.menu ? "linksMobile" : "linksMobileHidden"}>
+              <h5 className="mobileLink">Link 1</h5>
+              <h5 className="mobileLink">Link 2</h5>
+              <h5 className="mobileLink">Link 3</h5>
+              <h5 className="mobileLink">Link 4</h5>
+            </Container>
+          </StyledButtonBoxMobile>
+        </Container>
+        <Container fluid className={"welcomeBufferMobile " + (this.state.menu ? "blurBackground" : "")}>
+          <StyledWelcomeMobile>
+            <Container fluid className="welcomeBoxMobile">
+              <h1 className="welcomeHeadingMobile">Welcome</h1>
+              <h2 className="welcomeSubHeadingMobile">Jason Gilman's Portfolio</h2>
+            </Container>
+            <Container fluid className="introBoxMobile">
+              <Row>
+                <Col sm={8} xs={8} className="skillsMobile">
+                  <h2 className="skillLabelMobile">Software Engineering</h2>
+                  <div className="skillDividerMobile"/>
+                  <h2 className="skillLabelMobile">Web Development</h2>
+                  <div className="skillDividerMobile"/>
+                  <h2 className="skillLabelMobile">Project Design</h2>
+                  <div className="skillDividerMobile"/>
+                  <h2 className="skillLabelMobile">Problem Solving</h2>
+                </Col>
+                <Col sm={4} xs={4} className="iconsMobile">
+                  <StyledIconBoxMobile>
+                    <Github className="iconMobile"/>
+                    <Linkedin className="iconMobile"/>
+                    <Email className="iconMobile"/>
+                  </StyledIconBoxMobile>
+                </Col>
+              </Row>
+              <Row className="underlinesMobile">
+                <div className="skillUnderlineMobile one"/>
+                <div className="skillUnderlineMobile two"/>
+                <div className="skillUnderlineMobile three"/>
+              </Row>
+            </Container>
+          </StyledWelcomeMobile>
+        </Container>
       </Container>
-      <StyledWelcomeMobile>
-          <Container fluid className="welcomeBoxMobile">
-            <h1 className="welcomeHeadingMobile">Welcome</h1>
-            <h2 className="welcomeSubHeadingMobile">Jason Gilman's Portfolio</h2>
-          </Container>
-          <Container fluid className="introBoxMobile">
-            <Row>
-              <Col sm={8} xs={8} className="skillsMobile">
-                <h2 className="skillLabelMobile">Software Engineering</h2>
-                <div className="skillDividerMobile"/>
-                <h2 className="skillLabelMobile">Web Development</h2>
-                <div className="skillDividerMobile"/>
-                <h2 className="skillLabelMobile">Project Design</h2>
-                <div className="skillDividerMobile"/>
-                <h2 className="skillLabelMobile">Problem Solving</h2>
-              </Col>
-              <Col sm={4} xs={4} className="iconsMobile">
-                <StyledIconBoxMobile>
-                  <Github className="iconMobile"/>
-                  <Linkedin className="iconMobile"/>
-                  <Email className="iconMobile"/>
-                </StyledIconBoxMobile>
-              </Col>
-            </Row>
-            <Row className="underlinesMobile">
-              <div className="skillUnderlineMobile one"/>
-              <div className="skillUnderlineMobile two"/>
-              <div className="skillUnderlineMobile three"/>
-            </Row>
-          </Container>
-      </StyledWelcomeMobile>
-    </Container>
-);
+    );
+  }
+}
+
+export default Mobile;

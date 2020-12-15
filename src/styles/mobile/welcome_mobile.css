@@ -3,9 +3,14 @@
     position: relative;
     top: 0;
 
-    padding-top: 5vw;
+    padding: 0;
 
     background-color: var(--dark-background);
+}
+
+.welcomeBufferMobile
+{
+    padding-top: 5vw;
 }
 
 .welcomeBoxMobile
@@ -54,17 +59,39 @@
     height: 35vw;
 }
 
-.menuButtonMobile
+.openMenuButtonMobile
 {
-    width: 12vw;
-    height: 12vw;
+    position: fixed;
+    top: 8vw;
+    right: 6vw;
+    z-index: 99;
 
-    transform: rotate(45deg);
+    width: 6vw;
+    height: 6vw;
 
     color: var(--dark-text);
 }
 
-.menuButtonMobile:hover
+.closeMenuButtonMobile
+{
+    position: fixed;
+    top: 8vw;
+    right: 6vw;
+    z-index: 99;
+
+    width: 7vw;
+    height: 7vw;
+
+    color: var(--dark-text);
+}
+
+.openMenuButtonMobile:hover
+{
+    cursor: pointer;
+    color: var(--dark-text-hover);
+}
+
+.closeMenuButtonMobile:hover
 {
     cursor: pointer;
     color: var(--dark-text-hover);
@@ -134,4 +161,66 @@
 {
     cursor: pointer;
     color: var(--dark-text-hover);
+}
+
+.linksMobile
+{
+    visibility: visible;
+
+    opacity: 1;
+
+    height: 100%;
+
+    padding: 25vw 5vw 85vw 50vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
+    overflow: hidden;
+
+    transition: visiblity 2s, opacity 2s;
+}
+
+.linksMobileHidden
+{
+    width: 0px;
+    height: 0px;
+    
+    visibility: none;
+    opacity: 0;
+}
+
+.mobileLink
+{
+    font-size: 4vw;
+}
+
+.blurBackground
+{
+    filter: blur(5px);
+}
+
+.hidden
+{
+    display: none;
+}
+
+@media (max-width: 550px)
+{
+    .openMenuButtonMobile{right: 7vw;}
+    .closeMenuButtonMobile{right: 7vw;}
+}
+
+@media (max-width: 400px)
+{
+    .openMenuButtonMobile{right: 8vw;}
+    .closeMenuButtonMobile{right: 8vw;}
+}
+
+@media (max-width: 325px)
+{
+    .openMenuButtonMobile{right: 9vw;}
+    .closeMenuButtonMobile{right: 9vw;}
 }
