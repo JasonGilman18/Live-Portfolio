@@ -61,9 +61,9 @@
 
 .openMenuButtonMobile
 {
-    position: fixed;
-    top: 8vw;
-    right: 6vw;
+    position: absolute;
+    top: 3vw;
+    right: 4vw;
     z-index: 99;
 
     width: 6vw;
@@ -74,9 +74,9 @@
 
 .closeMenuButtonMobile
 {
-    position: fixed;
-    top: 8vw;
-    right: 6vw;
+    position: absolute;
+    top: 2vw;
+    right: 4vw;
     z-index: 99;
 
     width: 7vw;
@@ -209,18 +209,18 @@
 
 @media (max-width: 550px)
 {
-    .openMenuButtonMobile{right: 7vw;}
-    .closeMenuButtonMobile{right: 7vw;}
+    .openMenuButtonMobile{right: 4vw;}
+    .closeMenuButtonMobile{right: 4vw;}
 }
 
 @media (max-width: 400px)
 {
-    .openMenuButtonMobile{right: 8vw;}
-    .closeMenuButtonMobile{right: 8vw;}
+    .openMenuButtonMobile{right: 3.5vw;}
+    .closeMenuButtonMobile{right: 3.5vw;}
 }
 
 @media (max-width: 325px)
 {
-    .openMenuButtonMobile{right: 9vw;}
-    .closeMenuButtonMobile{right: 9vw;}
+    .openMenuButtonMobile{right: 3vw;}
+    .closeMenuButtonMobile{right: 3vw;}
 }
