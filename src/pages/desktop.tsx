@@ -45,9 +45,9 @@ export const Desktop: React.FunctionComponent = () => (
             </Col>
             <Col xl={4} lg={4} md={4} sm={4}>
               <StyledWelcomeDesktop main={false}>
-                <Github className="icon"/>
-                <Linkedin className="icon"/>
-                <Email className="icon"/>
+                <a href="https://github.com/JasonGilman18" target="_blank"><Github className="icon"/></a>
+                <a href="https://www.linkedin.com/in/jason-g-918475136/" target="_blank"><Linkedin className="icon"/></a>
+                <a href="mailto:jasongilman18@gmail.com"><Email className="icon"/></a>
               </StyledWelcomeDesktop>
             </Col>
           </Row>

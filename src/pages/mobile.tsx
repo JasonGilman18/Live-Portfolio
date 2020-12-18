@@ -73,9 +73,9 @@ class Mobile extends React.Component<MobileProps, MobileStates>
                 </Col>
                 <Col sm={4} xs={4} className="iconsMobile">
                   <StyledIconBoxMobile>
-                    <Github className="iconMobile"/>
-                    <Linkedin className="iconMobile"/>
-                    <Email className="iconMobile"/>
+                    <a href="https://github.com/JasonGilman18" target="_blank"><Github className="iconMobile"/></a>
+                    <a href="https://www.linkedin.com/in/jason-g-918475136/" target="_blank"><Linkedin className="iconMobile"/></a>
+                    <a href="mailto:jasongilman18@gmail.com"><Email className="iconMobile"/></a>
                   </StyledIconBoxMobile>
                 </Col>
               </Row>
