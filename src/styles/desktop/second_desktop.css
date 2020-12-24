@@ -1,0 +1,25 @@
+.secondContainer
+{
+    position: relative;
+    top: 0;
+
+    margin: 0;
+    padding: 50vw;
+
+    background-color: var(--light-background);
+}
+
+.stripe
+{
+    position: absolute;
+    top: 0;
+
+    width: .75vw;
+    height: 100%;
+}
+
+.first{left: 5vw;background-color: var(--dark-accent);}
+.second{left: 10vw;background-color: var(--light-accent-alt);}
+.third{left: 15vw;background-color: var(--light-accent);}
+
+.firstBubble{position: absolute;left: 4.25vw;top: 15vw;}

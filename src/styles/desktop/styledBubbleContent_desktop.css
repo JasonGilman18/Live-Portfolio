@@ -1,0 +1,66 @@
+.bubbleContentContainer
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: auto;
+    height: auto;
+}
+
+.firstBubbleBox
+{
+    position: absolute;
+    top: 1.10vw;
+    left: -5vw;
+
+    width: 75vw;
+    height: 25vw;
+
+    border-radius: 12px;
+
+    background-color: var(--light-accent);
+
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 25% 100%, 10% 25%, 0 25%, 0 0);
+}
+
+.firstBubbleBoxHeaderContainer
+{
+    position: absolute;
+    top: 2vw;
+    left: 10.75vw;
+
+    width: 65vw;
+    height: 5vw;
+
+    background-color: var(--light-accent-alt);
+}
+
+.firstBubbleBoxHeader
+{
+    position: absolute;
+    top: -6vw;
+    right: 0vw;
+
+    width: 65vw;
+    height: 7vw;
+
+    border-radius: 12px;
+
+    background-color: var(--light-accent-alt);
+
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+}
+
+.firstBubbleBoxHeader h1
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5vw;
+
+    margin: 0;
+
+    font-size: 3.75vw;
+    color: var(--dark-text);
+}

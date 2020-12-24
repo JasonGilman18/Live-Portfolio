@@ -1,0 +1,33 @@
+.outsideBubble
+{
+    width: 12.5vw;
+    height: 12.5vw;
+
+    padding: 1.2vw;
+
+    border-radius: 100%;
+
+    background-color: var(--light-accent-alt);
+}
+
+.middleBubble
+{
+    width: 100%;
+    height: 100%;
+
+    padding: 1.2vw;
+
+    border-radius: 100%;
+
+    background-color: var(--dark-accent);
+}
+
+.insideBubble
+{
+    width: 100%;
+    height: 100%;
+
+    border-radius: 100%;
+
+    background-color: var(--light-accent);
+}

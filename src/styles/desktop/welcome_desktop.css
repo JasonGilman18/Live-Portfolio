@@ -3,17 +3,27 @@
     position: relative;
     top: 0;
 
+    height: 100vh;
+
+    margin: 0;
+
     background-color: var(--dark-background);
 }
 
 .welcomeRow
 {
+    position: absolute;
+    top: 3vw;
+
+    width: 100%;
+
     padding: 5vw;
 }
 
 .welcomeHeading
 {
     margin-left: 2vw;
+    margin-top: 1vw;
 
     font-size: 6vw;   
 
@@ -41,6 +51,11 @@
 
 .introRow
 {
+    position: absolute;
+    bottom: 3vw;
+
+    width: 100%;
+
     padding: 1vw 5vw 5vw 5vw; 
 
     color: var(--light-text);
@@ -96,10 +111,14 @@
     color: var(--dark-text-hover);
 }
 
-/*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px)
+.linkRow
 {
+    position: absolute;
+    top: 32vw;
 
+    padding: 1vw 5vw 5vw 5vw;
+
+    width: 100%;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -111,11 +130,105 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (max-width: 991.98px)
 {
+    .welcomeRow
+    {
+        top: 2vw;
+    }
 
+    .introRow
+    {
+        bottom: 2vw;
+    }
+
+    .welcomeHeading
+    {
+        margin: 2vw 0vw 0vw 2vw;
+    }
+
+    .welcomeSubHeading
+    {
+        margin: 0vw 0vw 0vw 3vw;
+    }
+
+    .iconContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon
+    {
+        margin: 0vw 0vw 1vw 0vw;
+    }
+
+    .skills
+    {
+        flex-direction: column;
+    }
+
+    .skillDivider
+    {
+        width: 10%;
+        height: 2px;
+
+        margin: 1vw 0vw 1vw 0vw;
+    }
+
+    .skillLabel
+    {
+        font-size: 2.3vw;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (max-width: 1199.98px)
 {
-    
+    .welcomeRow
+    {
+        top: 2vw;
+    }
+
+    .introRow
+    {
+        bottom: 2vw;
+    }
+
+    .welcomeHeading
+    {
+        margin: 2vw 0vw 0vw 2vw;
+    }
+
+    .welcomeSubHeading
+    {
+        margin: 0vw 0vw 0vw 3vw;
+    }
+
+    .iconContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon
+    {
+        margin: 0vw 0vw 1vw 0vw;
+    }
+
+    .skills
+    {
+        flex-direction: column;
+    }
+
+    .skillDivider
+    {
+        width: 10%;
+        height: 2px;
+
+        margin: 1vw 0vw 1vw 0vw;
+    }
+
+    .skillLabel
+    {
+        font-size: 2.3vw;
+    }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import {Desktop} from "./desktop";
+import {DesktopSmall} from "./desktop_small";
 import Mobile from "./mobile";
 
 
@@ -50,7 +51,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageStates>
 
     render()
     {
-      if(this.state.browserWidth > 767.98 || this.state.orientation == "landscape")
+      if(this.state.browserWidth > 575.98 || this.state.orientation == "landscape")
         return <Desktop/>;
       else
         return <Mobile/>;

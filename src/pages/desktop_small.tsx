@@ -13,25 +13,34 @@ import {ReactComponent as Linkedin} from '../icons/linkedin.svg';
 import {ReactComponent as Email} from '../icons/email.svg';
 
 
-export const Desktop: React.FunctionComponent = () => (
+export const DesktopSmall: React.FunctionComponent = () => (
 
   <div>
     <Container fluid className="welcomeContainer">
           <Row className="welcomeRow">
-            <Col xl={8} lg={9} md={9} sm={9}>
+            <Col md={12} sm={12}>
               <StyledWelcomeDesktop main={true}>
                 <h1 className="welcomeHeading">Welcome</h1>
                 <h2 className="welcomeSubHeading">Jason Gilman's Portfolio</h2>
               </StyledWelcomeDesktop>
             </Col>
-            <Col xl={4} lg={3} md={3} sm={3}>
+          </Row>
+          <Row className="linkRow">
+            <Col md={8} sm={8}>
+              <StyledWelcomeDesktop main={false}>
+                <a href="https://github.com/JasonGilman18" target="_blank"><Github className="icon"/></a>
+                <a href="https://www.linkedin.com/in/jason-g-918475136/" target="_blank"><Linkedin className="icon"/></a>
+                <a href="mailto:jasongilman18@gmail.com"><Email className="icon"/></a>
+              </StyledWelcomeDesktop>
+            </Col>
+            <Col md={4} sm={4}>
               <Container className="linkBox">
                   <LinkTable links={["Link 1", "Link 2", "Link 3", "Link 4"]}></LinkTable>
               </Container>
             </Col>
           </Row>
-          <Row className="introRow">
-            <Col xl={8} lg={9} md={9} sm={9}>
+          <Row className="introRow">  
+            <Col md={12} sm={12}>
               <Container className="skills">
                 <h2 className="skillLabel">Software Engineering</h2>
                 <div className="skillDivider"/>
@@ -46,15 +55,6 @@ export const Desktop: React.FunctionComponent = () => (
                 <div className="skillUnderline two"/>
                 <div className="skillUnderline three"/>
               </Container>
-            </Col>
-            <Col xl={4} lg={3} md={3} sm={3}>
-              <StyledWelcomeDesktop main={false}>
-                <div className="iconContainer">
-                  <a href="https://github.com/JasonGilman18" target="_blank"><Github className="icon"/></a>
-                  <a href="https://www.linkedin.com/in/jason-g-918475136/" target="_blank"><Linkedin className="icon"/></a>
-                  <a href="mailto:jasongilman18@gmail.com"><Email className="icon"/></a>
-                </div>
-              </StyledWelcomeDesktop>
             </Col>
           </Row>
         </Container>
