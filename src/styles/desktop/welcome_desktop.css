@@ -8,6 +8,8 @@
 
         padding-bottom: 5vw;
         margin: 0;
+
+        overflow: hidden;
     
         background-color: var(--dark-background);
     }
@@ -15,7 +17,7 @@
     .welcomeRow
     {
         position: relative;
-        top: 5vw;
+        top: 0vw;
 
         width: 100%;
 
@@ -55,7 +57,7 @@
     {
         width: 100%;
 
-        margin-top: 10vw;
+        margin-top: 5vw;
         padding: 1vw 5vw 5vw 5vw; 
 
         color: var(--light-text);
@@ -142,14 +144,9 @@
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px)
 {
-    .welcomeContainer
-    {
-        min-height: 100vh;
-    }
-
     .welcomeRow
     {
-        top: 3vw;
+        top: 0vw;
     }
 
     .introRow
@@ -212,6 +209,11 @@
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px)
 {
+    .welcomeContainer
+    {
+        min-height: 100vh;
+    }
+
     .welcomeRow
     {
         top: 0vw;

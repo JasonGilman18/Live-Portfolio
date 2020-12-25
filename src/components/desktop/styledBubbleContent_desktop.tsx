@@ -8,11 +8,11 @@ type StyledBubbleContentProps = {header: string}
 export const StyledBubbleContentDesktop: React.FunctionComponent<StyledBubbleContentProps> = (props) => (
 
     <div className="bubbleContentContainer">
-        <div className="firstBubbleBoxHeaderContainer">
-            <div className="firstBubbleBoxHeader">
+        <div className="bubbleBoxHeaderContainer">
+            <div className="bubbleBoxHeader">
                   <h1>{props.header}</h1>
             </div>
-            <div className="firstBubbleBox">
+            <div className="bubbleBox">
                 {props.children}
             </div>
         </div>

@@ -1,4 +1,4 @@
-.bubbleContentContainer
+.bubbleContentContainerMobile
 {
     position: absolute;
     top: 0;
@@ -8,23 +8,23 @@
     height: auto;
 }
 
-.bubbleBox
+.bubbleBoxMobile
 {
     position: absolute;
     top: 1.10vw;
     left: -5vw;
 
-    width: 75vw;
-    height: 25vw;
+    width: 85vw;
+    height: 50vw;
 
     border-radius: 12px;
 
     background-color: var(--light-accent);
 
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 25% 100%, 10% 25%, 0 25%, 0 0);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 25% 100%, 10% 12.5%, 0 12.5%, 0 0);
 }
 
-.bubbleBoxHeaderContainer
+.bubbleBoxHeaderContainerMobile
 {
     position: absolute;
     top: 2vw;
@@ -36,31 +36,31 @@
     background-color: var(--light-accent-alt);
 }
 
-.bubbleBoxHeader
+.bubbleBoxHeaderMobile
 {
     position: absolute;
-    top: -6vw;
-    right: 0vw;
+    top: -10vw;
+    right: -10vw;
 
-    width: 65vw;
-    height: 7vw;
+    width: 80vw;
+    height: 15vw;
 
-    border-radius: 12px;
+    border-radius: 0px 12px 0px 0px;
 
     background-color: var(--light-accent-alt);
 
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
 }
 
-.bubbleBoxHeader h1
+.bubbleBoxHeaderMobile h1
 {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     right: 5vw;
 
     margin: 0;
 
-    font-size: 3.75vw;
+    font-size: 6vw;
     color: var(--dark-text);
 }

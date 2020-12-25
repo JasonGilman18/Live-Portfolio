@@ -65,7 +65,7 @@ export const Desktop: React.FunctionComponent = () => (
           <div className="firstBubble">
             <StyledBubbleDesktop/>
             <StyledBubbleContentDesktop header={"About Me"}>
-
+              
             </StyledBubbleContentDesktop>
           </div>
         </Container>

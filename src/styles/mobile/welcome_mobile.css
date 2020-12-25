@@ -3,8 +3,6 @@
     position: relative;
     top: 0;
 
-    height: 100vh;
-
     padding: 0;
 
     background-color: var(--dark-background);
@@ -142,6 +140,7 @@
 .underlinesMobile
 {
     margin-top: 8vw;
+    margin-bottom: 5vw;
     padding-left: 9vw;
 
     display: flex;
