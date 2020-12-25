@@ -9,13 +9,13 @@
 
     padding: 0px;
 
-    border-radius: 12px;
+    border-radius: 0px 12px 0px 0px;
 
     transition: width 1s, height 1s;
 
     background-color: var(--dark-accent);
 
-    clip-path: polygon(27% 0, 100% 54%, 100% 0);
+    clip-path: polygon(100% 80%, 20% 0, 100% 0);
 }
 
 .styledButtonBoxMdMobile
@@ -29,13 +29,13 @@
 
     padding: 0px !important;
 
-    border-radius: 12px;
+    border-radius: 0px 12px 0px 0px;
 
     transition: width 1s, height 1s;
 
     background-color: var(--light-accent-alt);
 
-    clip-path: polygon(17% 0, 100% 62%, 100% 0);
+    clip-path: polygon(100% 90%, 10% 0, 100% 0);
 }
 
 .styledButtonBoxLgMobile
@@ -49,13 +49,13 @@
 
     padding: 0px !important;
 
-    border-radius: 12px;
+    border-radius: 0px 12px 0px 0px;
 
     transition: width 1s, height 1s;
 
     background-color: var(--light-accent);
 
-    clip-path: polygon(7% 0, 100% 70%, 100% 0);
+    clip-path: polygon(100% 100%, 0 0, 100% 0);
 }
 
 .styledMenuLg
@@ -71,7 +71,7 @@
     width: 90vw;
     height: 120vw;
 
-    clip-path: polygon(14% 0, 100% 65%, 100% 0);
+    
 
     transition: width 1s, height 1s;
 }
@@ -81,7 +81,7 @@
     width: 90vw;
     height: 120vw;
 
-    clip-path: polygon(20% 0, 100% 60%, 100% 0);
+    
 
     transition: width 1s, height 1s;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import {Desktop} from "./desktop";
-import {DesktopSmall} from "./desktop_small";
 import Mobile from "./mobile";
 
 

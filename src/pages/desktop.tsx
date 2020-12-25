@@ -31,7 +31,7 @@ export const Desktop: React.FunctionComponent = () => (
             </Col>
           </Row>
           <Row className="introRow">
-            <Col xl={8} lg={9} md={9} sm={9}>
+            <Col className="skillSection" xl={8} lg={9} md={9} sm={9}>
               <Container className="skills">
                 <h2 className="skillLabel">Software Engineering</h2>
                 <div className="skillDivider"/>
