@@ -16,6 +16,6 @@ body
     margin: 0px;
     padding: 0px;
 
-    background-color: #f4f4f4;
+    background-color: var(--light-background);
     font-family: 'Roboto', sans-serif, Helvetica;
 }

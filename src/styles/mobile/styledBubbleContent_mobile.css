@@ -15,13 +15,17 @@
     left: -5vw;
 
     width: 85vw;
-    height: 50vw;
+    height: 100vw;
+
+    padding: 2vw 4vw 2vw 20vw;
 
     border-radius: 12px;
 
     background-color: var(--light-accent);
 
-    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 25% 100%, 10% 12.5%, 0 12.5%, 0 0);
+    color: var(--dark-text);
+
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 18% 100%, 10% 6%, 0 6%, 0 0);
 }
 
 .bubbleBoxHeaderContainerMobile

@@ -98,7 +98,12 @@ class Mobile extends React.Component<MobileProps, MobileStates>
           <div className="firstBubbleMobile">
             <StyledBubbleMobile/>
             <StyledBubbleContentMobile header={"About Me"}>
-              
+              <p>
+              My name is Jason Gilman, and I am soon to be a professional software engineer. 
+              I will graduate from Texas A&M University in May of 2021, and will be moving to Austin, Tx to begin my career. 
+              I am interested in various aspects of software engineering, including SAAS development, frontend and backend design, 
+              information storage and retrieval, and artificial intelligence. My stack of choice is a ReactJS frontend with a Flask backend.
+              </p>
             </StyledBubbleContentMobile>
           </div>
         </Container>

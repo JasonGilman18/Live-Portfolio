@@ -1,25 +1,83 @@
-.secondContainer
+@media (min-width: 576px)
 {
-    position: relative;
-    top: 0;
-
-    margin: 0;
-    padding: 50vw;
-
-    background-color: var(--light-background);
+    .secondContainer
+    {
+        position: relative;
+        top: 0;
+        z-index: -2;
+    
+        margin: 0;
+        padding: 0;
+    
+        background-color: var(--light-background);
+    }
+    
+    .stripe
+    {
+        position: absolute;
+        top: 0;
+        z-index: -1;
+    
+        width: .75vw;
+        height: 100%;
+    }
+    
+    .first{left: 5vw;background-color: var(--dark-accent);}
+    .second{left: 10vw;background-color: var(--light-accent-alt);}
+    .third{left: 15vw;background-color: var(--light-accent);}
+    
+    .firstBubble
+    {
+        padding-left: 2vw;
+        padding-top: 15vw;
+    
+        width: auto;
+        height: auto;
+    
+        display: inline-block;
+    }
+    
+    .bubbleParagraph
+    {
+        font-size: 2.5vw;
+    }
 }
 
-.stripe
+@media (min-width: 768px)
 {
-    position: absolute;
-    top: 0;
+    .firstBubble
+    {
+        padding-left: 2.25vw;
+    }
 
-    width: .75vw;
-    height: 100%;
+    .bubbleParagraph
+    {
+        font-size: 2vw;
+    }
 }
 
-.first{left: 5vw;background-color: var(--dark-accent);}
-.second{left: 10vw;background-color: var(--light-accent-alt);}
-.third{left: 15vw;background-color: var(--light-accent);}
+@media (min-width: 992px)
+{
+    .firstBubble
+    {
+        padding-left: 2.5vw;
+    }
 
-.firstBubble{position: absolute;left: 4.25vw;top: 15vw;}
+    .bubbleParagraph
+    {
+        font-size: 1.75vw;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .firstBubble
+    {
+        padding-left: 2.75vw;
+    }
+
+    .bubbleParagraph
+    {
+        font-size: 1.5vw;
+    }    
+}
