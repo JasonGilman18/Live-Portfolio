@@ -4,7 +4,6 @@
     {
         position: relative;
         top: 0;
-        z-index: -2;
     
         margin: 0;
         padding: 0;
@@ -16,7 +15,7 @@
     {
         position: absolute;
         top: 0;
-        z-index: -1;
+        z-index: 1;
     
         width: .75vw;
         height: 100%;
@@ -36,17 +35,37 @@
     
         display: inline-block;
     }
+
+    .secondBubble
+    {
+        padding-left: 2vw;
+        padding-top: 10vw;
+
+        width: auto;
+        height: auto;
+
+        display: inline-block;
+    }
     
     .bubbleParagraph
     {
         font-size: 2.5vw;
     }
+
+    .thirdBubble
+    {
+        padding-left: 2vw;
+        padding-top: 10vw;
+
+        width: auto;
+        height: auto;
+
+        display: inline-block;
+    }
 }
 
 @media (min-width: 768px)
 {
-
-
     .bubbleParagraph
     {
         font-size: 2vw;
@@ -55,8 +74,6 @@
 
 @media (min-width: 992px)
 {
-    
-
     .bubbleParagraph
     {
         font-size: 1.75vw;
@@ -65,8 +82,6 @@
 
 @media (min-width: 1200px)
 {
-
-
     .bubbleParagraph
     {
         font-size: 1.5vw;

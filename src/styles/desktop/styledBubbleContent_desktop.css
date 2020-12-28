@@ -1,9 +1,11 @@
 @media (min-width: 576px)
 {   
     .bubbleBox
-    {    
+    {   
+        position: relative;
         width: 75vw;
         height: auto;
+        z-index: 3;
     
         padding: 4vw 4vw 2vw 21vw;
     
@@ -17,14 +19,15 @@
     .bubbleBoxHeaderContainer
     {
         position: relative;
-        bottom: 18vw;
-        left: 4vw;
+        bottom: 4.75vw;
+        left: 3.5vw;
     }
     
     .bubbleBoxHeader
     {
         position: relative;
-        z-index: -1;
+
+        z-index: 1;
 
         width: 65vw;
         height: auto;
@@ -60,7 +63,8 @@
 
     .bubbleBoxHeaderContainer
     {
-        bottom: 17.6vw;
+        bottom: 4.5vw;
+        left: 3.75vw;
     }
 }
 
@@ -73,7 +77,8 @@
 
     .bubbleBoxHeaderContainer
     {
-        bottom: 17.2vw;
+        bottom: 4.25vw;
+        left: 4vw;
     }
 }
 
@@ -86,6 +91,7 @@
 
     .bubbleBoxHeaderContainer
     {
-        bottom: 16.8vw;
+        bottom: 4vw;
+        left: 4.5vw;
     }
 }

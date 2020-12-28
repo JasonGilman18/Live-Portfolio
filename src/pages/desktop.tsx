@@ -8,6 +8,8 @@ import { LinkTable } from '../components/desktop/linkTable_desktop';
 import { StyledWelcomeDesktop } from '../components/desktop/styledWelcome_desktop';
 import { StyledBubbleDesktop } from '../components/desktop/styledBubble_desktop';
 import { StyledBubbleContentDesktop } from '../components/desktop/styledBubbleContent_desktop';
+import { ExperienceDesktop } from '../components/desktop/experience_desktop';
+import { ProjectsDesktop } from '../components/desktop/projects_desktop';
 import {ReactComponent as Github} from '../icons/github.svg';
 import {ReactComponent as Linkedin} from '../icons/linkedin.svg';
 import {ReactComponent as Email} from '../icons/email.svg';
@@ -67,10 +69,22 @@ export const Desktop: React.FunctionComponent = () => (
             <StyledBubbleContentDesktop header={"About Me"}>
               <p className="bubbleParagraph">
                 My name is Jason Gilman, and I am soon to be a professional software engineer. 
-                I will graduate from Texas A&M University in May of 2021, and will be moving to Austin, Tx to begin my career. 
+                I will graduate from Texas A&M University in May of 2021, and will be moving to Austin, TX to begin my career. 
                 I am interested in various aspects of software engineering, including SaaS development, frontend and backend design, 
                 information storage and retrieval, and artificial intelligence. My stack of choice is a ReactJS frontend with a Flask backend.
               </p>
+            </StyledBubbleContentDesktop>
+          </div>
+          <div className="secondBubble">
+            <StyledBubbleDesktop/>
+            <StyledBubbleContentDesktop header={"Experience"}>
+              <ExperienceDesktop/>
+            </StyledBubbleContentDesktop>
+          </div>
+          <div className="thirdBubble">
+            <StyledBubbleDesktop/>
+            <StyledBubbleContentDesktop header={"Projects"}>
+              <ProjectsDesktop/>
             </StyledBubbleContentDesktop>
           </div>
         </Container>

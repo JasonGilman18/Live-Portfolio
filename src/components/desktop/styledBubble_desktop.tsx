@@ -6,11 +6,12 @@ import { Container } from "react-bootstrap";
 
 
 export const StyledBubbleDesktop: React.FunctionComponent = (props) => (
+    <div className="centerBubble">
+        <div className="outsideBubble">
+            <div className="middleBubble">
+                <div className="insideBubble">
 
-    <div className="outsideBubble">
-        <div className="middleBubble">
-            <div className="insideBubble">
-
+                </div>
             </div>
         </div>
     </div>

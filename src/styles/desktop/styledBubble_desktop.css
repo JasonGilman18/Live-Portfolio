@@ -1,3 +1,13 @@
+.centerBubble
+{
+    position: absolute;
+    left: 4vw;
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+}
+
 .outsideBubble
 {
     width: 12.5vw;
