@@ -53,7 +53,7 @@ export const ProjectsDesktop: React.FunctionComponent = (props) => {
                 </Col>
                 <Col xl={10} lg={10} md={10} sm={10} xs={10}>
                     <dl className={active==0 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtDesktop">
                             <Container fluid className="noMargins">
                                 <Col className="noMargins" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Aerial Pathfinding Reconnaissance System
@@ -63,12 +63,12 @@ export const ProjectsDesktop: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>
-                        <dd>- A fully encapsulated system to map an area and provide navigation instructions to autonomous vehicles</dd>
-                        <dd>- I designed the network architecture of the system, and created a desktop application to serve as the controller and central network node of the system</dd>
-                        <dd>- The desktop application was developed using Typescript, ElectronJS, ReactJS, Leaflet, and node-Wifi, with a Python backend</dd>
+                        <dd className="ddDesktop">- A fully encapsulated system to map an area and provide navigation instructions to autonomous vehicles</dd>
+                        <dd className="ddDesktop">- I designed the network architecture of the system, and created a desktop application to serve as the controller and central network node of the system</dd>
+                        <dd className="ddDesktop">- The desktop application was developed using Typescript, ElectronJS, ReactJS, Leaflet, and node-Wifi, with a Python backend</dd>
                     </dl>
                     <dl className={active==1 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtDesktop">
                             <Container fluid className="noMargins">
                                 <Col className="noMargins" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Spotify Mood Search
@@ -78,12 +78,12 @@ export const ProjectsDesktop: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- A web application to rank a dataset of songs, artists, and albums based on the user's mood</dd>
-                        <dd>- The frontend of the application was developed using ReactJS and Typescript</dd>
-                        <dd>- The backend and ranking algorithms of the application were developed using Python Flask</dd>
+                        <dd className="ddDesktop">- A web application to rank a dataset of songs, artists, and albums based on the user's mood</dd>
+                        <dd className="ddDesktop">- The frontend of the application was developed using ReactJS and Typescript</dd>
+                        <dd className="ddDesktop">- The backend and ranking algorithms of the application were developed using Python Flask</dd>
                     </dl>
                     <dl className={active==2 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtDesktop">
                             <Container fluid className="noMargins">
                                 <Col className="noMargins" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Human Trafficking Synopsis
@@ -93,12 +93,12 @@ export const ProjectsDesktop: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- A desktop application to visualize a database consisting of human trafficking crime records in the United States</dd>
-                        <dd>- ReactJS and Typescript were used in designing the frontend and event handling, while Leaflet and GraphJS were used to visualize data</dd>
-                        <dd>- The backend of the application consisted of an SQLite database</dd>
+                        <dd className="ddDesktop">- A desktop application to visualize a database consisting of human trafficking crime records in the United States</dd>
+                        <dd className="ddDesktop">- ReactJS and Typescript were used in designing the frontend and event handling, while Leaflet and GraphJS were used to visualize data</dd>
+                        <dd className="ddDesktop">- The backend of the application consisted of an SQLite database</dd>
                     </dl>
                     <dl className={active==3 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtDesktop">
                             <Container fluid className="noMargins">
                                 <Col className="noMargins" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Live Portfolio
@@ -108,8 +108,8 @@ export const ProjectsDesktop: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- This is the site you are currently on</dd>
-                        <dd>- Developed using ReactJS and Typescript</dd>
+                        <dd className="ddDesktop">- This is the site you are currently on</dd>
+                        <dd className="ddDesktop">- Developed using ReactJS and Typescript</dd>
                     </dl>
                 </Col>
             </Row>

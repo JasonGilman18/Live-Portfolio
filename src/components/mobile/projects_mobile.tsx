@@ -53,7 +53,7 @@ export const ProjectsMobile: React.FunctionComponent = (props) => {
                 </Col>
                 <Col xl={10} lg={10} md={10} sm={10} xs={10}>
                     <dl className={active==0 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtMobile">
                             <Container fluid className="noMarginsMobile">
                                 <Col className="noMarginsMobile" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Aerial Pathfinding Reconnaissance System
@@ -63,11 +63,11 @@ export const ProjectsMobile: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>
-                        <dd>- A fully encapsulated system to map an area and provide navigation instructions to autonomous vehicles</dd>
-                        <dd>- A desktop application was developed using Typescript, ElectronJS, ReactJS, Leaflet, and node-Wifi, with a Python backend</dd>
+                        <dd className="ddMobile">- A fully encapsulated system to map an area and provide navigation instructions to autonomous vehicles</dd>
+                        <dd className="ddMobile">- A desktop application was developed using Typescript, ElectronJS, ReactJS, Leaflet, and node-Wifi, with a Python backend</dd>
                     </dl>
                     <dl className={active==1 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtMobile">
                             <Container fluid className="noMarginsMobile">
                                 <Col className="noMarginsMobile" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Spotify Mood Search
@@ -77,11 +77,11 @@ export const ProjectsMobile: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- A web application to rank a dataset of songs, artists, and albums based on the user's mood</dd>
-                        <dd>- The frontend of the application was developed using ReactJS and Typescript, while python was used for the backend</dd>
+                        <dd className="ddMobile">- A web application to rank a dataset of songs, artists, and albums based on the user's mood</dd>
+                        <dd className="ddMobile">- The frontend of the application was developed using ReactJS and Typescript, while python was used for the backend</dd>
                     </dl>
                     <dl className={active==2 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtMobile">
                             <Container fluid className="noMarginsMobile">
                                 <Col className="noMarginsMobile" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Human Trafficking Synopsis
@@ -91,11 +91,11 @@ export const ProjectsMobile: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- A desktop application to visualize a database consisting of human trafficking crime records in the United States</dd>
-                        <dd>- ReactJS and Typescript were used in designing the frontend and event handling, while Leaflet and GraphJS were used to visualize data</dd>
+                        <dd className="ddMobile">- A desktop application to visualize a database consisting of human trafficking crime records in the United States</dd>
+                        <dd className="ddMobile">- ReactJS and Typescript were used in designing the frontend and event handling, while Leaflet and GraphJS were used to visualize data</dd>
                     </dl>
                     <dl className={active==3 ? "" : "hidden"}>
-                        <dt>
+                        <dt className="dtMobile">
                             <Container fluid className="noMarginsMobile">
                                 <Col className="noMarginsMobile" xl={9} lg={9} md={9} sm={9} xs={9}>
                                     Live Portfolio
@@ -105,8 +105,8 @@ export const ProjectsMobile: React.FunctionComponent = (props) => {
                                 </Col>
                             </Container>
                         </dt>                        
-                        <dd>- This is the site you are currently on</dd>
-                        <dd>- Developed using ReactJS and Typescript</dd>
+                        <dd className="ddMobile">- This is the site you are currently on</dd>
+                        <dd className="ddMobile">- Developed using ReactJS and Typescript</dd>
                     </dl>
                 </Col>
             </Row>

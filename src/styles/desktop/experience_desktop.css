@@ -31,9 +31,9 @@
         background-color: var(--dark-background);
     }
 
-    dt{font-size:2.75vw;margin-bottom:2vw;}
+    .dtDesktop{font-size:2.75vw;margin-bottom:2vw;}
 
-    dd{font-size:2.5vw;}
+    .ddDesktop{font-size:2.5vw;}
 
     .hidden
     {

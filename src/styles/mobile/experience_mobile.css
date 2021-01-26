@@ -29,9 +29,9 @@
     background-color: var(--dark-background);
 }
 
-dt{font-size:4.25vw;margin-bottom:2vw;}
+.dtMobile{font-size:4.25vw;margin-bottom:2vw;}
 
-dd{font-size:4vw;}
+.ddMobile{font-size:4vw;}
 
 .hidden
 {

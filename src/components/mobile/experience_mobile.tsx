@@ -52,27 +52,27 @@ export const ExperienceMobile: React.FunctionComponent = (props) => {
                 </Col>
                 <Col xl={10} lg={10} md={10} sm={10} xs={10}>
                     <dl className={active==0 ? "" : "hidden"}>
-                        <dt>Dell Technologies, Software Engineering Intern</dt>
-                        <dd>- Utilized A.I. and Machine Learning tools to develop a chatbot for an externally facing website</dd>
-                        <dd>- Developed a RESTful middleware service and hosted on Pivotal Cloud Foundry</dd>
-                        <dd>- Designed a chatbot U.I. using HTML, CSS, and Adobe Experience Manager</dd>
+                        <dt className="dtMobile">Dell Technologies, Software Engineering Intern</dt>
+                        <dd className="ddMobile">- Utilized A.I. and Machine Learning tools to develop a chatbot for an externally facing website</dd>
+                        <dd className="ddMobile">- Developed a RESTful middleware service and hosted on Pivotal Cloud Foundry</dd>
+                        <dd className="ddMobile">- Designed a chatbot U.I. using HTML, CSS, and Adobe Experience Manager</dd>
                     </dl>
                     <dl className={active==1 ? "" : "hidden"}>
-                        <dt>INFIRMware, Research Aide</dt>
-                        <dd>- Researched and tested various network security exploits in small unmanned aerial systems</dd>
-                        <dd>- Received experience in using various cybersecurity software tools</dd>
-                        <dd>- Worked in unison with a government contracted company</dd>
+                        <dt className="dtMobile">INFIRMware, Research Aide</dt>
+                        <dd className="ddMobile">- Researched and tested various network security exploits in small unmanned aerial systems</dd>
+                        <dd className="ddMobile">- Received experience in using various cybersecurity software tools</dd>
+                        <dd className="ddMobile">- Worked in unison with a government contracted company</dd>
                     </dl>
                     <dl className={active==2 ? "" : "hidden"}>
-                        <dt>TAMUmake Hackathon, Director</dt>
-                        <dd>- Led the development of a 24 hour engineering hackathon event</dd>
-                        <dd>- Managed a committee of 10+ members</dd>
-                        <dd>- Held local corporate committee position from 9/2018-5/2019</dd>
+                        <dt className="dtMobile">TAMUmake Hackathon, Director</dt>
+                        <dd className="ddMobile">- Led the development of a 24 hour engineering hackathon event</dd>
+                        <dd className="ddMobile">- Managed a committee of 10+ members</dd>
+                        <dd className="ddMobile">- Held local corporate committee position from 9/2018-5/2019</dd>
                     </dl>
                     <dl className={active==3 ? "" : "hidden"}>
-                        <dt>IEEE, Texas A&M Chapter, Officer</dt>
-                        <dd>- Organized extracurricular workshops to teach various industry skills</dd>
-                        <dd>- Developed professional soft skills while working with various corporations</dd>
+                        <dt className="dtMobile">IEEE, Texas A&M Chapter, Officer</dt>
+                        <dd className="ddMobile">- Organized extracurricular workshops to teach various industry skills</dd>
+                        <dd className="ddMobile">- Developed professional soft skills while working with various corporations</dd>
                     </dl>
                 </Col>
             </Row>
