@@ -1,21 +1,10 @@
-.bubbleContentContainerMobile
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: auto;
-    height: auto;
-}
-
 .bubbleBoxMobile
 {
-    position: absolute;
-    top: 1.10vw;
-    left: -5vw;
+    position: relative;
+    z-index: 3;
 
     width: 85vw;
-    height: 100vw;
+    height: auto;
 
     padding: 2vw 4vw 2vw 20vw;
 
@@ -30,24 +19,31 @@
 
 .bubbleBoxHeaderContainerMobile
 {
-    position: absolute;
-    top: 2vw;
-    left: 10.75vw;
+    position: relative;
+    top: -8.2vw;
+    left: 5.5vw;
+}
 
-    width: 65vw;
-    height: 5vw;
-
-    background-color: var(--light-accent-alt);
+.bubbleBoxHeaderContainerMobileFirst
+{
+    position: relative;
+    top: -7.75vw;
+    left: 5.5vw;
 }
 
 .bubbleBoxHeaderMobile
 {
-    position: absolute;
-    top: -10vw;
-    right: -10vw;
+    position: relative;
+    z-index: 1;
 
     width: 80vw;
-    height: 15vw;
+    height: auto;
+
+    padding: 2vw 4vw 2vw 0vw;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
     border-radius: 0px 12px 0px 0px;
 
@@ -58,11 +54,6 @@
 
 .bubbleBoxHeaderMobile h1
 {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-30%);
-    right: 5vw;
-
     margin: 0;
 
     font-size: 6vw;

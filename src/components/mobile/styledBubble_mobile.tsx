@@ -6,10 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const StyledBubbleMobile: React.FunctionComponent = (props) => (
 
-    <div className="outsideBubbleMobile">
-        <div className="middleBubbleMobile">
-            <div className="insideBubbleMobile">
+    <div className="centerBubbleMobile">
+        <div className="outsideBubbleMobile">
+            <div className="middleBubbleMobile">
+                <div className="insideBubbleMobile">
 
+                </div>
             </div>
         </div>
     </div>

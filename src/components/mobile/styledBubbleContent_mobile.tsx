@@ -4,11 +4,10 @@ import "../../styles/mobile/styledBubbleContent_mobile.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-type StyledBubbleContentProps = {header: string}
+type StyledBubbleContentProps = {header: string, first: boolean}
 export const StyledBubbleContentMobile: React.FunctionComponent<StyledBubbleContentProps> = (props) => (
 
-    <div className="bubbleContentContainerMobile">
-        <div className="bubbleBoxHeaderContainerMobile">
+        <div className={props.first ? "bubbleBoxHeaderContainerMobileFirst" : "bubbleBoxHeaderContainerMobile"}>
             <div className="bubbleBoxHeaderMobile">
                   <h1>{props.header}</h1>
             </div>
@@ -16,5 +15,4 @@ export const StyledBubbleContentMobile: React.FunctionComponent<StyledBubbleCont
                 {props.children}
             </div>
         </div>
-    </div>
 );

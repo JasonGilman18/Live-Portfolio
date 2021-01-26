@@ -1,0 +1,39 @@
+.timelineColExpMobile
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding-top: 2.2vw;
+
+    min-height: 106vw;
+}
+
+.timelineBubbleExpMobile
+{
+    width: 6.5vw;
+    height: 3vw;
+
+    margin: 0vw 0vw 5vw 0vw;
+
+    border-radius: 12px;
+
+    background-color: var(--dark-accent);
+
+    cursor: pointer;
+}
+
+.activeExpMobile
+{
+    background-color: var(--dark-background);
+}
+
+dt{font-size:4.25vw;margin-bottom:2vw;}
+
+dd{font-size:4vw;}
+
+.hidden
+{
+    display: none;
+}

@@ -1,4 +1,5 @@
-import React from "react";
+//@ts-nocheck
+import React, { useRef, useState} from "react";
 import "../styles/global.css";
 import '../styles/mobile/welcome_mobile.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -9,6 +10,8 @@ import { StyledButtonBoxMobile } from '../components/mobile/styledButtonBox_mobi
 import { StyledIconBoxMobile } from '../components/mobile/styledIconBox_mobile';
 import { StyledBubbleMobile } from '../components/mobile/styledBubble_mobile';
 import { StyledBubbleContentMobile } from '../components/mobile/styledBubbleContent_mobile';
+import { ExperienceMobile } from '../components/mobile/experience_mobile';
+import { ProjectsMobile } from '../components/mobile/projects_mobile';
 import {ReactComponent as Github} from '../icons/github.svg';
 import {ReactComponent as Linkedin} from '../icons/linkedin.svg';
 import {ReactComponent as Email} from '../icons/email.svg';
@@ -16,48 +19,31 @@ import {ReactComponent as Menu} from '../icons/bars-solid.svg';
 import {ReactComponent as Close} from '../icons/times-solid.svg';
 
 
-type MobileProps = {};
-type MobileStates = {menu: boolean};
-class Mobile extends React.Component<MobileProps, MobileStates>
-{
-  constructor(props: any)
-  {
-    super(props);
+export const Mobile: React.FunctionComponent = (props) => {
 
-    this.state = {menu: false};
+  const [menu, setMenu] = useState(false);
+  const home = useRef(null);
+  const aboutMe = useRef(null);
+  const experience = useRef(null);
+  const projects = useRef(null);
 
-    this.openMenu = this.openMenu.bind(this);
-    this.closeMenu = this.closeMenu.bind(this);
-  }
 
-  openMenu()
-  {
-    this.setState({menu: true});
-  }
-
-  closeMenu()
-  {
-    this.setState({menu: false});
-  }
-
-  render()
-  {
-    return (
-      <div>
+  return (
+      <div ref={home}>
         <Container fluid className="welcomeContainerMobile">
           <Container className="menuContainerMobile">
-            <StyledButtonBoxMobile menu={this.state.menu}>
-              <Menu className={this.state.menu ? "hidden" : "openMenuButtonMobile"} onClick={this.openMenu}/>
-              <Close className={this.state.menu ? "closeMenuButtonMobile" : "hidden"} onClick={this.closeMenu}/>
-              <Container fluid className={this.state.menu ? "linksMobile" : "linksMobileHidden"}>
-                <h5 className="mobileLink">Link 1</h5>
-                <h5 className="mobileLink">Link 2</h5>
-                <h5 className="mobileLink">Link 3</h5>
-                <h5 className="mobileLink">Link 4</h5>
+            <StyledButtonBoxMobile menu={menu}>
+              <Menu className={menu ? "hidden" : "openMenuButtonMobile"} onClick={() => setMenu(true)}/>
+              <Close className={menu ? "closeMenuButtonMobile" : "hidden"} onClick={() => setMenu(false)}/>
+              <Container fluid className={menu ? "linksMobile" : "linksMobileHidden"}>
+                <h5 className="mobileLink" onClick={() => {setMenu(false);home.current.scrollIntoView({ behavior: "smooth" })}}>Home</h5>
+                <h5 className="mobileLink" onClick={() => {setMenu(false);aboutMe.current.scrollIntoView({ behavior: "smooth" })}}>About Me</h5>
+                <h5 className="mobileLink" onClick={() => {setMenu(false);experience.current.scrollIntoView({ behavior: "smooth" })}}>Experience</h5>
+                <h5 className="mobileLink" onClick={() => {setMenu(false);projects.current.scrollIntoView({ behavior: "smooth" })}}>Projects</h5>
               </Container>
             </StyledButtonBoxMobile>
           </Container>
-          <Container fluid className={"welcomeBufferMobile " + (this.state.menu ? "blurBackground" : "")}>
+          <Container fluid className={"welcomeBufferMobile " + (menu ? "blurBackground" : "")} onClick={() => setMenu(false)}>
             <StyledWelcomeMobile>
               <Container fluid className="welcomeBoxMobile">
                 <h1 className="welcomeHeadingMobile">Welcome</h1>
@@ -91,14 +77,14 @@ class Mobile extends React.Component<MobileProps, MobileStates>
             </StyledWelcomeMobile>
           </Container>
         </Container>
-        <Container fluid className="secondContainerMobile">
+        <Container fluid className={menu ? "secondContainerMobile blurBackground" : "secondContainerMobile"} onClick={() => setMenu(false)}>
           <div className="stripeMobile firstMobile"/>
           <div className="stripeMobile secondMobile"/>
           <div className="stripeMobile thirdMobile"/>
-          <div className="firstBubbleMobile">
+          <div className="firstBubbleMobile" ref={aboutMe}>
             <StyledBubbleMobile/>
-            <StyledBubbleContentMobile header={"About Me"}>
-              <p>
+            <StyledBubbleContentMobile header={"About Me"} first={true}>
+              <p className="bubbleParagraphMobile">
               My name is Jason Gilman, and I am soon to be a professional software engineer. 
               I will graduate from Texas A&M University in May of 2021, and will be moving to Austin, Tx to begin my career. 
               I am interested in various aspects of software engineering, including SAAS development, frontend and backend design, 
@@ -106,10 +92,19 @@ class Mobile extends React.Component<MobileProps, MobileStates>
               </p>
             </StyledBubbleContentMobile>
           </div>
+          <div className="secondBubbleMobile" ref={experience}>
+            <StyledBubbleMobile/>
+            <StyledBubbleContentMobile header={"Experience"} first={false}> 
+              <ExperienceMobile/>
+            </StyledBubbleContentMobile>
+          </div>
+          <div className="thirdBubbleMobile" ref={projects}>
+            <StyledBubbleMobile/>
+            <StyledBubbleContentMobile header={"Projects"} first={false}>
+              <ProjectsMobile/>
+            </StyledBubbleContentMobile>
+          </div>
         </Container>
       </div>
     );
-  }
 }
-
-export default Mobile;
