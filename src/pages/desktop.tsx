@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/global.css";
 import '../styles/desktop/welcome_desktop.css';
 import '../styles/desktop/second_desktop.css';
@@ -15,10 +15,16 @@ import {ReactComponent as Linkedin} from '../icons/linkedin.svg';
 import {ReactComponent as Email} from '../icons/email.svg';
 
 
-export const Desktop: React.FunctionComponent = () => (
+export const Desktop: React.FunctionComponent = () => {
 
+  const home = useRef(null);
+  const aboutMe = useRef(null);
+  const experience = useRef(null);
+  const projects = useRef(null);
+
+  return (
   <div>
-    <Container fluid className="welcomeContainer">
+    <Container fluid className="welcomeContainer" ref={home}>
           <Row className="welcomeRow">
             <Col xl={8} lg={9} md={9} sm={9}>
               <StyledWelcomeDesktop main={true}>
@@ -28,7 +34,7 @@ export const Desktop: React.FunctionComponent = () => (
             </Col>
             <Col xl={4} lg={3} md={3} sm={3}>
               <Container className="linkBox">
-                  <LinkTable links={["Link 1", "Link 2", "Link 3", "Link 4"]}></LinkTable>
+                  <LinkTable links={["Home", "About Me", "Experience", "Projects"]} refs={[home, aboutMe, experience, projects]}></LinkTable>
               </Container>
             </Col>
           </Row>
@@ -64,7 +70,7 @@ export const Desktop: React.FunctionComponent = () => (
           <div className="stripe first"/>
           <div className="stripe second"/>
           <div className="stripe third"/>
-          <div className="firstBubble">
+          <div className="firstBubble" ref={aboutMe}>
             <StyledBubbleDesktop/>
             <StyledBubbleContentDesktop header={"About Me"}>
               <p className="bubbleParagraph">
@@ -75,13 +81,13 @@ export const Desktop: React.FunctionComponent = () => (
               </p>
             </StyledBubbleContentDesktop>
           </div>
-          <div className="secondBubble">
+          <div className="secondBubble" ref={experience}>
             <StyledBubbleDesktop/>
             <StyledBubbleContentDesktop header={"Experience"}>
               <ExperienceDesktop/>
             </StyledBubbleContentDesktop>
           </div>
-          <div className="thirdBubble">
+          <div className="thirdBubble" ref={projects}>
             <StyledBubbleDesktop/>
             <StyledBubbleContentDesktop header={"Projects"}>
               <ProjectsDesktop/>
@@ -89,4 +95,5 @@ export const Desktop: React.FunctionComponent = () => (
           </div>
         </Container>
   </div>
-);
+  );
+};
