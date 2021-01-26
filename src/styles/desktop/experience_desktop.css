@@ -47,9 +47,9 @@
 
     .timelineBubbleExp{width:5.5vw;height: 2vw;}
 
-    dt{font-size:2.25vw;}
+    .dtDesktop{font-size:2.25vw;}
 
-    dd{font-size:2vw;}    
+    .ddDesktop{font-size:2vw;}    
 }
 
 @media (min-width: 992px)
@@ -58,9 +58,9 @@
 
     .timelineBubbleExp{width:5vw;height: 1.75vw;}
 
-    dt{font-size:2vw;}
+    .dtDesktop{font-size:2vw;}
 
-    dd{font-size:1.75vw;}
+    .ddDesktop{font-size:1.75vw;}
 }
 
 @media (min-width: 1200px)
@@ -69,7 +69,7 @@
 
     .timelineBubbleExp{width:5vw;height: 1.75vw;margin-bottom:3.5vw;}
 
-    dt{font-size:1.75vw;}
+    .dtDesktop{font-size:1.75vw;}
 
-    dd{font-size:1.5vw;}
+    .ddDesktop{font-size:1.5vw;}
 }

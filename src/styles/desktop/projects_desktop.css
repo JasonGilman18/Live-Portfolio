@@ -86,9 +86,9 @@
 
     .timelineBubblePro{width:5.5vw;height: 2vw;}
 
-    dt{font-size:2.25vw;}
+    .dtDesktop{font-size:2.25vw;}
 
-    dd{font-size:2vw;}
+    .ddDesktop{font-size:2vw;}
 
     .projectIcon{width:5.75vw;height:5.75vw;}
 }
@@ -99,9 +99,9 @@
 
     .timelineBubblePro{width:5vw;height: 1.75vw;}
 
-    dt{font-size:2vw;}
+    .dtDesktop{font-size:2vw;}
 
-    dd{font-size:1.75vw;}
+    .ddDesktop{font-size:1.75vw;}
 
     .projectIcon{width:5.5vw;height:5.5vw;}
 }
@@ -112,9 +112,9 @@
 
     .timelineBubblePro{width:5vw;height: 1.75vw;margin-bottom:3.5vw;}
 
-    dt{font-size:1.75vw;}
+    .dtDesktop{font-size:1.75vw;}
 
-    dd{font-size:1.5vw;}
+    .ddDesktop{font-size:1.5vw;}
 
     .projectIcon{width:5.25vw;height:5.25vw;}
 }
