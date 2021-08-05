@@ -1,0 +1,19 @@
+.background {
+    width: 100vw;
+    height: 100vh; 
+    overflow: none; 
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cone {
+    margin: 1vw;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 100%;
+    transition: all 1s;
+    background-color: #DCDCDC;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
