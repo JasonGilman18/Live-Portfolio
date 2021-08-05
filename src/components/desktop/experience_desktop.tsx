@@ -14,7 +14,6 @@ export const ExperienceDesktop: React.FunctionComponent = (props) => {
     const [timeoutInit, setTimeoutInit] = useState(false);
     
     useEffect(() => {
-        
         startInterval();
     }, []);
 
